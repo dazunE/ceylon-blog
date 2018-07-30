@@ -1,6 +1,23 @@
 .site-header{
+  position: relative;
   .site-branding{
-    float: left;
-    width: 75%;
+    text-align: center;
+    .site-title{
+      margin-bottom: 0;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  .header-left{
+    position: absolute;
+    left:0;
+    top:0;
+  }
+  .header-right{
+    position: absolute;
+    right:0;
+    top:0;
   }
 }

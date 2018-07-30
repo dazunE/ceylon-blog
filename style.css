@@ -20,6 +20,11 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*
+font families
+*/
+h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", serif; line-height: 1.8; text-rendering: optimizeLegibility; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -132,7 +137,7 @@ template { display: none; }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body, button, input, select, optgroup, textarea { color: #404040; font-family: sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
+body, button, input, select, optgroup, textarea { color: #404040; font-family: "Open Sans", sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 
@@ -289,6 +294,18 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header { position: relative; }
+
+.site-header .site-branding { text-align: center; }
+
+.site-header .site-branding .site-title { margin-bottom: 0; }
+
+.site-header .site-branding .site-title a { text-decoration: none; color: black; }
+
+.site-header .header-left { position: absolute; left: 0; top: 0; }
+
+.site-header .header-right { position: absolute; right: 0; top: 0; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

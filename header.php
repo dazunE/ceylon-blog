@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -25,7 +25,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ceylon-blog' ); ?></a>
     <div class="container">
         <header id="masthead" class="site-header">
-            <div class="header-left">
+                <div class="header-left">
+                    Toggleable Menu
+                </div>
                 <div class="site-branding">
 		            <?php
 		            the_custom_logo();
@@ -44,6 +46,9 @@
                         <p class="site-description"><?php echo $ceylon_blog_description; /* WPCS: xss ok. */ ?></p>
 		            <?php endif; ?>
                 </div><!-- .site-branding -->
+            <div class="header-right">
+                Search and Lang Switch
+            </div>
                 <nav id="site-navigation" class="main-navigation">
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ceylon-blog' ); ?></button>
 		            <?php
@@ -53,8 +58,6 @@
 		            ) );
 		            ?>
                 </nav><!-- #site-navigation -->
-            </div>
-
         </header><!-- #masthead -->
         <div id="content" class="site-content">
 

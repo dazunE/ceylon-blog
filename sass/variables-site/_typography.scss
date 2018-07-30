@@ -1,5 +1,18 @@
-$font__main: sans-serif;
+/*
+font families
+*/
+$font__main: 'Open Sans', sans-serif;
+$font_heading : 'Playfair Display', serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font__line-height-heading:1.8;
+
+// Headings
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font_heading;
+  line-height: 1.8;
+  text-rendering: optimizeLegibility;
+}

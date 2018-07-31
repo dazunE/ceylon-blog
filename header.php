@@ -25,39 +25,33 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ceylon-blog' ); ?></a>
     <div class="container">
         <header id="masthead" class="site-header">
-                <div class="header-left">
+            <div class="col-wrap">
+                <div class="header-left col-3">
                     Toggleable Menu
                 </div>
-                <div class="site-branding">
-		            <?php
-		            the_custom_logo();
-		            if ( is_front_page() && is_home() ) :
-			            ?>
+                <div class="site-branding col-3">
+		            <?php the_custom_logo(); ?>
                         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		            <?php
-		            else :
-			            ?>
-                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-		            <?php
-		            endif;
 		            $ceylon_blog_description = get_bloginfo( 'description', 'display' );
 		            if ( $ceylon_blog_description || is_customize_preview() ) :
 			            ?>
                         <p class="site-description"><?php echo $ceylon_blog_description; /* WPCS: xss ok. */ ?></p>
 		            <?php endif; ?>
                 </div><!-- .site-branding -->
-            <div class="header-right">
-                Search and Lang Switch
+                <div class="header-right col-3">
+                    Search and Lang Switch
+                </div>
             </div>
-                <nav id="site-navigation" class="main-navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ceylon-blog' ); ?></button>
-		            <?php
-		            wp_nav_menu( array(
-			            'theme_location' => 'menu-1',
-			            'menu_id'        => 'primary-menu',
-		            ) );
-		            ?>
-                </nav><!-- #site-navigation -->
+            <nav id="site-navigation" class="main-navigation">
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ceylon-blog' ); ?></button>
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'menu-1',
+                    'menu_id'        => 'primary-menu',
+                ) );
+                ?>
+            </nav><!-- #site-navigation -->
         </header><!-- #masthead -->
         <div id="content" class="site-content">
 

@@ -27,7 +27,13 @@
         <header id="masthead" class="site-header">
             <div class="col-wrap">
                 <div class="header-left col-3">
-                    Toggleable Menu
+                    <div class="ui-menu">
+                        <span class="ui-menu__content">
+                            <i class="ui-menu__line ui-menu__line_1"></i>
+                            <i class="ui-menu__line ui-menu__line_2"></i>
+                            <i class="ui-menu__line ui-menu__line_3"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="site-branding col-3">
 		            <?php the_custom_logo(); ?>

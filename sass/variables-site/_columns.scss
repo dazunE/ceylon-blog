@@ -14,6 +14,15 @@ $columns: (
         9: 11.11%
 );
 
+$offset-columns :(
+      3: 66.66%,
+      4:75%,
+      5:80%,
+      6:83.34%,
+      7:85.72%,
+      8:87.5%
+);
+
 $columns__margin: 3.8%;
 
 .container-fluid {
@@ -42,6 +51,17 @@ $columns__margin: 3.8%;
 
 @each $col, $width in $columns {
   .col-#{$col} {
+    flex: 0 0 $width;
+    max-width: $width;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: ($columns__margin /2);
+    padding-left: ($columns__margin /2);
+  }
+}
+@each $col, $width in $offset-columns {
+  .col-#{$col}-offset {
     flex: 0 0 $width;
     max-width: $width;
     position: relative;

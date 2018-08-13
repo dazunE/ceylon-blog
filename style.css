@@ -20,36 +20,6 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
-/*
-font families
-*/
-h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", serif; line-height: 1.8; text-rendering: optimizeLegibility; }
-
-/* Basic Grid Function */
-.container-fluid { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
-
-.container { width: 100%; max-width: 1440px; padding-right: 1.9%; padding-left: 1.9%; margin-right: auto; margin-left: auto; }
-
-.col-wrap { display: flex; flex-wrap: wrap; margin-right: -1.9%; margin-left: -1.9%; }
-
-.col-1 { flex: 0 0 100%; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-2 { flex: 0 0 50%; max-width: 50%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-3 { flex: 0 0 33.33%; max-width: 33.33%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-4 { flex: 0 0 25%; max-width: 25%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-5 { flex: 0 0 20%; max-width: 20%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-6 { flex: 0 0 16.66%; max-width: 16.66%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-7 { flex: 0 0 14.28%; max-width: 14.28%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-8 { flex: 0 0 12.5%; max-width: 12.5%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
-.col-9 { flex: 0 0 11.11%; max-width: 11.11%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -158,6 +128,51 @@ template { display: none; }
 
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
+
+/*-------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/*
+font families
+*/
+h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", serif; line-height: 1.8; text-rendering: optimizeLegibility; }
+
+/* Basic Grid Function */
+.container-fluid { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+.container { width: 100%; max-width: 1440px; padding-right: 1.9%; padding-left: 1.9%; margin-right: auto; margin-left: auto; }
+
+.col-wrap { display: flex; flex-wrap: wrap; margin-right: -1.9%; margin-left: -1.9%; }
+
+.col-1 { flex: 0 0 100%; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-2 { flex: 0 0 50%; max-width: 50%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-3 { flex: 0 0 33.33%; max-width: 33.33%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-4 { flex: 0 0 25%; max-width: 25%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-5 { flex: 0 0 20%; max-width: 20%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-6 { flex: 0 0 16.66%; max-width: 16.66%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-7 { flex: 0 0 14.28%; max-width: 14.28%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-8 { flex: 0 0 12.5%; max-width: 12.5%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-9 { flex: 0 0 11.11%; max-width: 11.11%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-3-offset { flex: 0 0 66.66%; max-width: 66.66%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-4-offset { flex: 0 0 75%; max-width: 75%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-5-offset { flex: 0 0 80%; max-width: 80%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-6-offset { flex: 0 0 83.34%; max-width: 83.34%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-7-offset { flex: 0 0 85.72%; max-width: 85.72%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
+
+.col-8-offset { flex: 0 0 87.5%; max-width: 87.5%; position: relative; width: 100%; min-height: 1px; padding-right: 1.9%; padding-left: 1.9%; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -319,27 +334,13 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header { position: relative; }
+.site-header { position: relative; background: #343a40; }
 
 .site-header .site-branding { text-align: center; }
 
-.site-header .site-branding .site-title { margin-bottom: 0; margin-top: 0; }
+.site-header .site-branding h1 a { text-decoration: none; color: #fff; }
 
-.site-header .site-branding .site-title a { text-decoration: none; color: black; }
-
-.site-header .site-branding .site-description { margin-top: 0; }
-
-.site-header .ui-menu { padding: 30px 0; cursor: pointer; user-select: none; transform: translateZ(0); -webkit-transition: opacity; }
-
-.site-header .ui-menu .ui-menu__content { position: relative; display: block; width: 30px; height: 20px; }
-
-.site-header .ui-menu .ui-menu__content .ui-menu__line { position: absolute; left: 0; top: 0; width: 100%; height: 4px; background: #000; transition: background-color 0.35s, transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1); transform: translateY(0) translateZ(0); }
-
-.site-header .ui-menu .ui-menu__content .ui-menu__line.ui-menu__line_2 { top: 10px; }
-
-.site-header .ui-menu .ui-menu__content .ui-menu__line.ui-menu__line_3 { top: 20px; }
-
-/*--------------------------------------------------------------
+/*------------------------------------------------------t--------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky { display: block; }
